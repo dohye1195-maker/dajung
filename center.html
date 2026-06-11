@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>광주로 - 취업상담·지원기관</title>
+
+<style>
+    * { box-sizing: border-box; }
+
+    body {
+        margin: 0;
+        font-family: "맑은 고딕", sans-serif;
+        color: #0b2545;
+        background-color: #ffffff;
+    }
+
+    .header {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding-left: 36px;
+    border-bottom: 1px solid #eee;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 78px;
+    height: auto;
+}
+
+.logo-text h1 {
+    font-size: 32px;
+    color: #1f4d91;
+    margin: 0;
+    line-height: 1;
+}
+
+.logo-text p {
+    font-size: 13px;
+    color: #111;
+    margin-top: 5px;
+}
+
+.sidebar {
+    width: 280px;
+    background-color: #f4f4f4;
+    padding: 30px 24px;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    color: #111;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 8px;
+}
+.container {
+    display: flex;
+    min-height: calc(100vh - 90px);
+}
+.content {
+    flex: 1;
+    padding: 44px 46px;
+}
+
+.content h1 {
+    font-size: 30px;
+    margin-bottom: 28px;
+}
+
+.card {
+    width: 100%;
+    max-width: 1050px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 24px 28px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.card h3 {
+    font-size: 22px;
+}
+
+.card p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.card a {
+    font-size: 18px;
+}
+
+
+    .card a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo-area">
+        <img src="images/dajung_logo.png" alt="다정 로고" class="logo-img">
+        <div class="logo-text">
+            <h1>다정</h1>
+            <p>광주청년취업통합플랫폼</p>
+        </div>
+    </a>
+</header>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <h2>취업정보 메뉴</h2>
+
+        <a href="job.html">채용정보</a>
+        <a href="program.html">취업지원 프로그램</a>
+        <a href="training.html">직업훈련 및 교육</a>
+        <a href="policy.html">청년정책</a>
+        <a href="center.html" class="active">취업지원센터</a>
+        <a href="multicultural.html">다문화가족 취업지원</a>
+
+        <div class="home-link">
+            <a href="../index.html">🏠 메인으로</a>
+        </div>
+    </aside>
+
+    <main class="content">
+        <h1>취업지원센터</h1>
+
+        <div class="card">
+            <h3>고용복지+센터</h3>
+            <p>
+                전국의 고용복지센터 정보를 지역별로 검색할 수 있도록
+                통합 제공하고 있으며, 구직자를 위한 다양한 고용복지
+                서비스를 원스톱으로 제공하고 있다.
+            </p>
+            <a href="https://www.workplus.go.kr" target="_blank">
+                사이트 바로가기
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>온통청년</h3>
+            <p>
+                청년들을 위한 정보제공, 교육, 멘토링, 컨설팅 등
+                다양한 취업활동을 할 수 있는 공유공간인 청년센터를
+                지역별로 탐색할 수 있도록 통합 제공하고 있다.
+            </p>
+            <a href="https://www.youthcenter.go.kr/youthApply/ythCenter/ythCenterMain"
+               target="_blank">
+                사이트 바로가기
+            </a>
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

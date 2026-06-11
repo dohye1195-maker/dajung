@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>광주청년취업통합플랫폼 다정</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="hero-wrap">
+
+    <header class="top-header">
+        <div class="logo-area">
+            <img src="images/dajung_logo.png" alt="다정 로고" class="logo-img">
+
+            <div class="logo-text">
+                <h1>다정</h1>
+                <p>광주청년취업통합플랫폼</p>
+            </div>
+        </div>
+
+       <nav class="main-nav">
+    <a href="about.html">광주청년취업통합플랫폼이란?</a>
+
+    <div class="dropdown">
+        <a href="#" class="dropbtn">메뉴</a>
+
+        <div class="dropdown-menu">
+            <a href="job.html">채용정보</a>
+            <a href="program.html">취업지원 프로그램</a>
+            <a href="training.html">직업훈련과 교육</a>
+            <a href="policy.html">청년취업정책</a>
+            <a href="center.html">취업지원센터</a>
+            <a href="multicultural.html">다문화가족 취업지원</a>
+        </div>
+    </div>
+
+    <a href="#" onclick="openLangPopup()">언어선택</a>
+</nav>
+    </header>
+
+ <main>
+        <section class="intro">
+            <h2>광주 청년의 취업을<br><span>함께 응원합니다</span></h2>
+            <p>다양한 취업정보와 지원 프로그램을 한 곳에서 쉽고 빠르게 확인하세요.</p>
+        </section>
+        
+    <section class="card-container">
+
+        <a href="job.html
+" class="card">
+            <img src="images/recruit.html" alt="채용정보">
+            <h3>채용정보</h3>
+            <p>공공기관, 민간기업, 광주 지역의 채용정보를 확인하세요</p>
+        </a>
+
+        <a href="program.html" class="card">
+            <img src="images/program.jpg" alt="취업지원 프로그램">
+            <h3>취업지원 프로그램</h3>
+            <p>취업을 위한 일경험, 취업역량강화 프로그램, 취업지원사업에 대한 정보를 확인하세요</p>
+        </a>
+
+        <a href="training.html" class="card">
+            <img src="images/training.jpg" alt="직업훈련 및 교육">
+            <h3>직업훈련 및 교육</h3>
+            <p>취업에 필요한 직무교육, 자격증, 직업훈련 과정 정보를 확인하세요</p>
+        </a>
+
+        <a href="policy.html" class="card">
+            <img src="images/policy.jpg" alt="청년정책">
+            <h3>청년정책</h3>
+            <p>청년 구직지원, 수당, 정책사업 정보를 확인하세요</p>
+        </a>
+
+        <a href="center.html" class="card">
+            <img src="images/center.jpg" alt="취업상담 지원기관">
+            <h3>취업지원센터</h3>
+            <p>직접 방문하거나 상담받을 수 있는 기관 정보를 확인하세요</p>
+        </a>
+
+        <a href="multicultural.html" class="card">
+            <img src="images/multicultural.jpg" alt="다문화가족 취업지원">
+            <h3>다문화가족 취업지원</h3>
+            <p>다문화가족 청년을 위한 취업, 교육, 상담 정보를 안내합니다.</p>
+        </a>
+
+    </section>
+</main>
+</div>
+
+<div id="langPopup" class="lang-popup">
+    <div class="lang-box">
+        <button class="close-btn" onclick="closeLangPopup()">×</button>
+        <h2>언어선택</h2>
+
+        <div class="lang-grid">
+           <button>한국어</button>
+<button>English</button>
+
+<button>Tiếng Việt</button>
+<button>中文</button>
+<button>Filipino</button>
+<button>ភាសាខ្មែរ</button>
+
+<button>日本語</button>
+<button>ภาษาไทย</button>
+<button>Монгол хэл</button>
+<button>Русский</button>
+
+<button>O'zbek tili</button>
+<button>ພາສາລາວ</button>
+<button>नेपाली</button>
+        </div>
+    </div>
+</div>
+
+<script>
+function openLangPopup() {
+    document.getElementById("langPopup").style.display = "flex";
+}
+
+function closeLangPopup() {
+    document.getElementById("langPopup").style.display = "none";
+}
+</script>
+
+<footer>
+    <p>© 광주 청년 취업정보사이트 취합 홈페이지</p>
+</footer>
+
+</body>
+</html>

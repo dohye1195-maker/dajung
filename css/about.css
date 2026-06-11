@@ -1,0 +1,83 @@
+.about-wrap {
+    width: calc(100% - 70px);
+    margin: 35px auto;
+    border-radius: 26px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 12px 35px rgba(31, 77, 145, 0.12);
+}
+
+.about-banner {
+    height: 280px;
+    background-image: url("../images/watercolor-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-banner h2 {
+    font-size: 56px;
+    font-weight: 800;
+    color: #1f4d91;
+    text-shadow:
+        0 2px 10px rgba(255,255,255,0.9),
+        0 0 15px rgba(255,255,255,0.8);
+}
+
+.about-section {
+    text-align: center;
+    padding: 70px 160px 40px;
+}
+
+.about-section p {
+    font-size: 20px;
+    line-height: 1.9;
+    color: #263c5a;
+}
+
+.logo-meaning {
+    text-align: center;
+    padding: 30px 180px 70px;
+}
+
+.logo-meaning img {
+    width: 350px;
+    margin-bottom: 60px;
+}
+
+.logo-meaning p {
+    font-size: 18px;
+    line-height: 1.9;
+    color: #333;
+}
+
+.info-section {
+    padding: 50px 120px 90px;
+}
+
+.info-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 48px;
+}
+
+.info-row h3 {
+    width: 150px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f4d91;
+    border-right: 3px solid #1f4d91;
+    margin-right: 40px;
+}
+
+.info-row p {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.9;
+    color: #183153;
+    font-weight: 400;
+}

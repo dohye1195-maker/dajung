@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Malgun Gothic", "Noto Sans KR", sans-serif;
+    color: #183153;
+    background: #ffffff;
+}
+
+/* 전체 수채화 박스 */
+.hero-wrap {
+    width: calc(100% - 70px);
+    min-height: 760px;
+    margin: 35px auto;
+    border-radius: 26px;
+    overflow: hidden;
+    position: relative;
+    background-image: url("../images/watercolor-bg.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    box-shadow: 0 12px 35px rgba(31, 77, 145, 0.12);
+}
+
+header.top-header,
+main {
+    position: relative;
+    z-index: 5;
+}
+/* 헤더를 수채화 배경 안으로 */
+header.top-header {
+    height: 95px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    border-bottom: none;
+    position: relative;
+    z-index: 20;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-text h1 {
+    margin: 0;
+    font-size: 38px;
+    color: #1f4d91;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.logo-text p {
+    margin-top: 5px;
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+}
+
+/* 상단 메뉴 */
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    margin-left: auto;
+}
+
+.main-nav a {
+    color: #183153;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.main-nav a:hover {
+    color: #f45b7a;
+}
+
+/* 드롭다운 */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    min-width: 230px;
+    border-radius: 14px;
+    padding: 12px 0;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.14);
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: #183153;
+    padding: 13px 22px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.dropdown-menu a:hover {
+    background: #fff1f4;
+    color: #f45b7a;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+    display: block;
+}
+
+/* 메인도 hero-wrap 안에 */
+main {
+    max-width: none;
+    margin: 0;
+    padding: 80px 70px 60px;
+}
+
+/* 기존 intro 박스 제거 */
+.intro {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    min-height: auto;
+    padding: 45px 70px 85px;
+    margin: 0;
+    border-radius: 0;
+    overflow: visible;
+}
+
+.intro::before,
+.intro::after {
+    display: none;
+}
+
+.intro h2 {
+    font-size: 56px;
+    line-height: 1.25;
+    color: #1f4d91;
+    margin-bottom: 24px;
+    font-weight: 800;
+}
+
+.intro h2::after {
+    content: none;
+}
+
+.intro h2 span {
+    color: #f45b7a;
+}
+
+.intro p {
+    font-size: 22px;
+    line-height: 1.8;
+    color: #31435f;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 18px;
+    margin-top: 0;
+    padding: 0 20px;
+    position: relative;
+    z-index: 5;
+}
+
+.card {
+    display: block;
+    background: rgba(255,255,255,0.92);
+    text-decoration: none;
+    color: #183153;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(31, 77, 145, 0.12);
+    box-shadow: 0 8px 22px rgba(31, 77, 145, 0.13);
+    transition: 0.25s;
+    min-height: 235px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 28px rgba(244, 91, 122, 0.20);
+}
+
+.card img {
+    width: 100%;
+    height: 105px;
+    object-fit: cover;
+    display: block;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 18px 14px 8px;
+    color: #1f4d91;
+    text-align: center;
+    word-break: keep-all;
+}
+
+.card p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0 14px 20px;
+    color: #41526d;
+    text-align: center;
+    word-break: keep-all;
+}
+
+/* 언어선택 팝업 */
+.lang-popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(24,49,83,0.55);
+    justify-content: center;
+    align-items: center;
+}
+
+.lang-box {
+    width: 82%;
+    max-width: 1050px;
+    background: white;
+    padding: 38px;
+    border-radius: 22px;
+    position: relative;
+}
+
+.lang-box h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #183153;
+}
+
+.close-btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background: white;
+    border: 2px solid #f7b84b;
+    font-size: 28px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.lang-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+}
+
+.lang-grid button {
+    height: 120px;
+    border: none;
+    border-radius: 14px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lang-grid button:nth-child(1) { background: #d92d20; }
+.lang-grid button:nth-child(2) { background: #c6421f; }
+.lang-grid button:nth-child(3) { background: #99701d; }
+.lang-grid button:nth-child(4) { background: #637f23; }
+.lang-grid button:nth-child(5) { background: #38864a; }
+.lang-grid button:nth-child(6) { background: #3d8b76; }
+.lang-grid button:nth-child(7) { background: #3e8798; }
+.lang-grid button:nth-child(8) { background: #386bb0; }
+.lang-grid button:nth-child(9) { background: #3b4da0; }
+.lang-grid button:nth-child(10) { background: #1d2a7d; }
+.lang-grid button:nth-child(11) { background: #2e2c98; }
+.lang-grid button:nth-child(12) { background: #4b367e; }
+.lang-grid button:nth-child(13) { background: #763184; }
+
+footer {
+    padding: 26px;
+    text-align: center;
+    background: #183153;
+    color: white;
+    font-size: 14px;
+}
+
+/* 반응형 */
+@media (max-width: 1100px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 30px;
+    }
+
+    header.top-header {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 700px) {
+    header.top-header {
+        height: auto;
+        padding: 25px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .intro {
+        padding: 55px 30px;
+        min-height: auto;
+    }
+
+    .intro h2 {
+        font-size: 34px;
+    }
+
+    .lang-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
